@@ -135,3 +135,43 @@ sudo reboot now
 su
 git --version
 su
+cd /home/user/lab3
+ls
+bash task1.sh
+cd ~/report
+nano task1.sh
+bash task1.sh
+cd ~/report
+cd ..
+cd ~/report
+cd /home/uder
+cd /home/user
+cd ~/report
+cd /home/user
+ls
+nano report
+nano task1.sh
+ls
+nano test
+cd /test
+cd test
+ls
+cd ..
+cd lab3
+bash task2.sh
+nano task2.sh
+bash task3.sh
+nano task3.sh
+bash task3.sh
+nano task3.sh
+bash task3.sh
+mkdir task4
+ls
+nano task4.sh
+ls
+nano task4.sh
+ls
+nano task5.sh
+cd /home/user/lab3
+ls
+nano main4.sh

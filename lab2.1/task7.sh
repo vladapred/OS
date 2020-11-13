@@ -25,4 +25,4 @@ command=$(ps -q $pid_tmp -o comm=)
 echo "$pid_tmp:$command:$minus" >> tmp
 done
 cat tmp | sort -t":" -nrk3 | head -3
-rm tmp bsleep.log asleep.log
+#rm tmp bsleep.log asleep.log

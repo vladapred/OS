@@ -1,0 +1,46 @@
+#!/bin/bash
+
+prevres=1
+res=1
+operation='+'
+(tail -f pipe5) | while true
+do
+read line
+case $line in
+"+")
+operation='+'
+echo "Additing"
+;;
+
+"*")
+operation='*'
+echo "Multiplying num"
+;;
+
+[0-9]*)
+prevres=$res
+if [[ $operation == '+' ]]
+then
+let res=$res+$line
+else
+let res=$res*$line
+fi
+echo "$prevres$operation$line = $res"
+;;
+
+"quit")
+killall tail
+echo "Exit"
+killall generation5.sh
+exit 0
+;;
+
+*)
+killall tail
+echo "Stopped "
+killall generation5.sh
+exit
+;;
+esac
+done
+
