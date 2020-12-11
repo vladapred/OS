@@ -1,0 +1,48 @@
+New backup
+	Date 2020-12-11
+	Files: 
+test1
+test2
+test3
+Change backup
+	Date 2020-12-11
+	New files:
+
+	Changed file:
+
+Change backup
+	Date 2020-12-11
+	New files:
+
+	Changed file:
+
+Change backup
+	Date 2020-12-11
+	New files:
+Copied: test4
+	Changed file:
+
+Change backup
+	Date 2020-12-11
+	New files:
+Copied: test5
+	Changed file:
+Changed: test4 next test4-2020-12-11
+Change backup
+	Date 2020-12-11
+	New files:
+
+	Changed file:
+Changed: test4 next test4-2020-12-11
+Change backup
+	Date 2020-12-11
+	New files:
+
+	Changed file:
+
+Change backup
+	Date 2020-12-11
+	New files:
+
+	Changed file:
+Changed: test4 last version is test4-2020-12-11

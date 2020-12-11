@@ -31,15 +31,13 @@ echo "$prevres$operation$line = $res"
 "quit")
 killall tail
 echo "Exit"
-killall generation5.sh
 exit 0
 ;;
 
 *)
 killall tail
 echo "Stopped "
-killall generation5.sh
-exit
+exit 0
 ;;
 esac
 done
