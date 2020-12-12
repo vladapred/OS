@@ -5,6 +5,13 @@ then
 echo 1 > "$PWD/.number_tmp.log"
 fi
 
+case $1 in
+*\ *)
+echo "Wrong format of file"
+exit 1
+;;
+esac
+
 if [[ $# -ne 1 ]]
 then
 echo "Wrong number of input arguments"

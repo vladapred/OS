@@ -21,6 +21,12 @@ then
 touch "$home_path/backup-report"
 fi
 
+if [[ "$(tree $home_path/source/ | tail -1 | awk '{print $1}')" -ne 0 ]]
+then
+echo "Error is directory"
+exit 1
+fi
+
 if [[ "$time_difference" -ge 7 ]] || [[ "$backup_prev" == "" ]]
 #b)
 then
