@@ -1,0 +1,10 @@
+1)net share temp4="C:\6\save"
+net use * \\%computername%\temp4
+
+2)xcopy /Z C:\Windows\file.pdf \\%computername%\temp4
+
+3)SCHTASKS /Create /SC ONCE /TN 2.3.bat /TR C:\6\2.2.bat/ST 11:10
+SCHTASKS /Delete /TN 2.3.bat
+
+4)fc /b \\%computername%\temp3\file.pdf C:\Windows\file.pdf > diff.txt 
+type diff.txt 
